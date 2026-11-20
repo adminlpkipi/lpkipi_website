@@ -1,0 +1,1745 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LPK Institut Pekerja Indonesia | Pelatihan & Penempatan Kerja</title>
+
+    <meta name="description" content="LPK Institut Pekerja Indonesia menyediakan program pelatihan dan persiapan kerja bagi calon tenaga kerja, termasuk program ke Jepang dan Korea.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="images/Logo_LPK_IPI-nobackground.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #26333d;
+            background: #fffdfb;
+        }
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        nav {
+            height: 90px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5%;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            position: relative;
+            z-index: 10;
+        }
+
+        .logo {
+            height: 72px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 42px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #26333d;
+            font-size: 18px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: #e86620;
+        }
+
+        .nav-button {
+            background: #e86620;
+            color: white !important;
+            padding: 17px 30px;
+            border-radius: 13px;
+            font-size: 17px !important;
+        }
+
+        .nav-button:hover {
+            background: #cf5819;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: calc(100vh - 90px);
+            padding: 65px 5% 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+
+            background:
+                radial-gradient(
+                    circle at 80% 45%,
+                    #ffe5d2 0%,
+                    #fff3e9 25%,
+                    #fffaf6 50%,
+                    #fffdfb 75%
+                );
+        }
+
+        .hero-left {
+            width: 55%;
+            max-width: 760px;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            background: #fff0e5;
+            color: #e86620;
+            padding: 13px 23px;
+            border-radius: 30px;
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 32px;
+        }
+
+        .hero h1 {
+            font-size: clamp(55px, 5vw, 76px);
+            line-height: 1.05;
+            letter-spacing: -2px;
+            margin-bottom: 30px;
+            font-weight: 800;
+        }
+
+        .hero h1 .orange {
+            color: #e86620;
+        }
+
+        .hero-description {
+            font-size: 21px;
+            line-height: 1.7;
+            color: #596873;
+            max-width: 700px;
+            margin-bottom: 38px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            text-decoration: none;
+            background: #e86620;
+            color: white;
+            padding: 18px 30px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: #cf5819;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            display: inline-block;
+            text-decoration: none;
+            color: #e86620;
+            border: 2px solid #e86620;
+            padding: 16px 30px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 700;
+            background: white;
+            transition: 0.3s;
+        }
+
+        .btn-secondary:hover {
+            background: #fff0e5;
+        }
+
+
+        /* =========================
+           HERO VISUAL
+        ========================= */
+
+        .hero-right {
+            width: 42%;
+            min-height: 520px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .circle {
+            position: absolute;
+            width: 490px;
+            height: 490px;
+            border-radius: 50%;
+            background: #ffe1cf;
+        }
+
+        .circle-inner {
+            position: absolute;
+            width: 390px;
+            height: 390px;
+            border-radius: 50%;
+            background: #edf1f4;
+        }
+
+        .logo-card {
+            position: relative;
+            z-index: 2;
+            width: 390px;
+            height: 390px;
+            background: white;
+            border-radius: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 20px 50px rgba(60,40,20,0.12);
+        }
+
+        .hero-logo {
+            width: 280px;
+            height: auto;
+        }
+
+        .badge {
+            position: absolute;
+            z-index: 5;
+            background: white;
+            padding: 17px 25px;
+            border-radius: 18px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+            font-size: 17px;
+            font-weight: 700;
+        }
+
+        .badge-japan {
+            top: 70px;
+            right: -10px;
+        }
+
+        .badge-korea {
+            bottom: 70px;
+            left: -20px;
+        }
+
+        .country {
+            color: #e86620;
+            font-size: 13px;
+            margin-right: 6px;
+        }
+
+
+        /* =========================
+           SECTION INTRO
+        ========================= */
+
+        .intro {
+            padding: 90px 5%;
+            text-align: center;
+            background: white;
+        }
+
+        .intro h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .intro h2 span {
+            color: #e86620;
+        }
+
+        .intro p {
+            max-width: 750px;
+            margin: auto;
+            color: #687680;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 1000px) {
+
+            nav {
+                padding: 0 4%;
+            }
+
+            .nav-menu {
+                gap: 20px;
+            }
+
+            .nav-menu a {
+                font-size: 15px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 50px;
+            }
+
+            .hero-left {
+                width: 100%;
+                max-width: 800px;
+            }
+
+            .hero-right {
+                width: 100%;
+                min-height: 450px;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+        }
+
+
+        @media (max-width: 700px) {
+
+            nav {
+                height: auto;
+                padding: 15px 5%;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .logo {
+                height: 60px;
+            }
+
+            .nav-menu {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .nav-button {
+                display: none;
+            }
+
+            .hero {
+                padding: 45px 5%;
+            }
+
+            .hero h1 {
+                font-size: 48px;
+            }
+
+            .hero-description {
+                font-size: 18px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+            }
+
+            .hero-right {
+                min-height: 350px;
+            }
+
+            .circle {
+                width: 330px;
+                height: 330px;
+            }
+
+            .circle-inner {
+                width: 270px;
+                height: 270px;
+            }
+
+            .logo-card {
+                width: 270px;
+                height: 270px;
+            }
+
+            .hero-logo {
+                width: 200px;
+            }
+
+            .badge {
+                font-size: 13px;
+                padding: 12px 16px;
+            }
+
+            .badge-japan {
+                top: 25px;
+                right: 0;
+            }
+
+            .badge-korea {
+                bottom: 25px;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav>
+
+        <a href="#">
+            <img
+                src="images/Logo_LPK_IPI-nobackground.png"
+                alt="Logo LPK Institut Pekerja Indonesia"
+                class="logo"
+            >
+        </a>
+
+        <div class="nav-menu">
+            <a href="#">Beranda</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#program">Program</a>
+            <a href="#kontak">Kontak</a>
+
+            <a href="https://forms.gle/ojp5CSrGKnMDw9UV7"
+                class="btn-primary"
+                target="_blank">
+                Daftar Sekarang
+            </a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Buka menu" onclick="toggleMenu()">
+            ☰
+        </button>
+        
+
+    </nav>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero" id="beranda"> <!--ini untuk section beranda-->
+
+        <div class="hero-left">
+
+            <div class="eyebrow">
+                Pelatihan • Sertifikasi • Penempatan Kerja
+            </div>
+
+            <h1>
+                Membangun<br>
+                Kompetensi,<br>
+                <span class="orange">
+                    Membuka Masa Depan.
+                </span>
+            </h1>
+
+            <p class="hero-description">
+                LPK Institut Pekerja Indonesia mempersiapkan
+                tenaga kerja Indonesia yang kompeten, profesional,
+                berkarakter, dan siap bekerja di dalam maupun luar negeri.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="https://forms.gle/ojp5CSrGKnMDw9UV7"
+                    class="btn-primary"
+                    target="_blank">
+                    Daftar Sekarang
+                </a>
+
+                <a href="#program" class="btn-secondary">
+                    Lihat Program
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-right">
+
+            <div class="circle"></div>
+
+            <div class="circle-inner"></div>
+
+            <div class="logo-card">
+
+                <img
+                    src="images/Logo_LPK_IPI-nobackground.png"
+                    alt="LPK Institut Pekerja Indonesia"
+                    class="hero-logo"
+                >
+
+            </div>
+
+
+            <div class="badge badge-japan">
+                <span class="country">JP</span>
+                Program Jepang
+            </div>
+
+
+            <div class="badge badge-korea">
+                <span class="country">KR</span>
+                Program Korea
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         INTRO SEMENTARA
+    ========================== -->
+
+    <section class="about" id="tentang">
+
+    <div class="about-heading">
+        <div class="section-label">TENTANG KAMI</div>
+
+        <h2>
+            Membangun Tenaga Kerja
+            <span>Indonesia yang Kompeten.</span>
+        </h2>
+
+        <p>
+            LPK Institut Pekerja Indonesia hadir sebagai lembaga
+            pelatihan yang berkomitmen mempersiapkan tenaga kerja
+            Indonesia agar memiliki kompetensi, karakter, dan
+            kesiapan untuk memasuki dunia kerja.
+        </p>
+    </div>
+
+
+    <div class="about-cards">
+
+        <div class="about-card">
+            <div class="card-icon">🎓</div>
+
+            <h3>Pelatihan</h3>
+
+            <p>
+                Program pelatihan dirancang untuk membekali peserta
+                dengan pengetahuan, keterampilan, bahasa, budaya,
+                dan kesiapan kerja.
+            </p>
+        </div>
+
+
+        <div class="about-card">
+            <div class="card-icon">📜</div>
+
+            <h3>Sertifikasi</h3>
+
+            <p>
+                Peserta dipersiapkan untuk mengikuti ujian dan
+                sertifikasi sesuai dengan kebutuhan program dan
+                dunia kerja.
+            </p>
+        </div>
+
+
+        <div class="about-card">
+            <div class="card-icon">🌏</div>
+
+            <h3>Penempatan Kerja</h3>
+
+            <p>
+                Mendampingi peserta dalam proses menuju peluang
+                kerja di dalam maupun luar negeri sesuai program
+                yang tersedia.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     KENAPA MEMILIH LPK IPI
+========================== -->
+
+<section class="why-us">
+
+    <div class="section-label">
+        KEUNGGULAN KAMI
+    </div>
+
+    <h2>
+        Mengapa Memilih
+        <span>LPK IPI?</span>
+    </h2>
+
+    <p class="why-intro">
+        Kami mempersiapkan peserta melalui pelatihan,
+        pembekalan, dan pendampingan agar lebih siap
+        menghadapi dunia kerja.
+    </p>
+
+    <div class="why-grid">
+
+        <div class="why-card">
+            <div class="why-number">01</div>
+
+            <div class="why-icon">🎓</div>
+
+            <h3>Pelatihan Terarah</h3>
+
+            <p>
+                Program pelatihan disusun untuk membekali
+                peserta dengan pengetahuan dan keterampilan
+                yang dibutuhkan dalam dunia kerja.
+            </p>
+        </div>
+
+
+        <div class="why-card">
+            <div class="why-number">02</div>
+
+            <div class="why-icon">🌏</div>
+
+            <h3>Bahasa & Budaya Kerja</h3>
+
+            <p>
+                Peserta mendapatkan pembekalan bahasa dan
+                pemahaman budaya kerja sesuai dengan
+                program yang diikuti.
+            </p>
+        </div>
+
+
+        <div class="why-card">
+            <div class="why-number">03</div>
+
+            <div class="why-icon">📜</div>
+
+            <h3>Persiapan Sertifikasi</h3>
+
+            <p>
+                Peserta dipersiapkan untuk mengikuti ujian
+                dan sertifikasi sesuai dengan kebutuhan
+                program.
+            </p>
+        </div>
+
+
+        <div class="why-card">
+            <div class="why-number">04</div>
+
+            <div class="why-icon">🤝</div>
+
+            <h3>Pendampingan Peserta</h3>
+
+            <p>
+                Peserta mendapatkan pendampingan selama
+                proses persiapan menuju tahapan kerja
+                sesuai program yang tersedia.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     ALUR PROGRAM
+========================== -->
+
+<section class="process" id="alur">
+
+    <div class="section-label">
+        ALUR PROGRAM
+    </div>
+
+    <h2>
+        Dari Pendaftaran
+        <span>Menuju Dunia Kerja.</span>
+    </h2>
+
+    <p class="process-intro">
+        Peserta mengikuti tahapan yang terstruktur mulai dari
+        proses pendaftaran, pelatihan, sertifikasi, hingga
+        persiapan keberangkatan sesuai program yang dipilih.
+    </p>
+
+    <div class="process-timeline">
+
+        <div class="process-item">
+            <div class="process-number">01</div>
+            <div class="process-content">
+                <h3>Pendaftaran</h3>
+                <p>
+                    Peserta melakukan pendaftaran dan mengisi
+                    data yang diperlukan.
+                </p>
+            </div>
+        </div>
+
+        <div class="process-item">
+            <div class="process-number">02</div>
+            <div class="process-content">
+                <h3>Seleksi & MCU</h3>
+                <p>
+                    Peserta mengikuti proses seleksi dan
+                    pemeriksaan kesehatan sesuai ketentuan.
+                </p>
+            </div>
+        </div>
+
+        <div class="process-item">
+            <div class="process-number">03</div>
+            <div class="process-content">
+                <h3>Pendaftaran Awal</h3>
+                <p>
+                    Peserta menyelesaikan proses administrasi
+                    awal sebelum mengikuti pelatihan.
+                </p>
+            </div>
+        </div>
+
+        <div class="process-item">
+            <div class="process-number">04</div>
+            <div class="process-content">
+                <h3>Pelatihan</h3>
+                <p>
+                    Peserta mengikuti program pelatihan selama
+                    4 bulan sesuai jalur yang dipilih.
+                </p>
+            </div>
+        </div>
+
+        <div class="process-item">
+            <div class="process-number">05</div>
+            <div class="process-content">
+                <h3>Ujian & Sertifikasi</h3>
+                <p>
+                    Peserta mengikuti ujian dan proses
+                    sertifikasi sesuai program.
+                </p>
+            </div>
+        </div>
+
+        <div class="process-item">
+            <div class="process-number">06</div>
+            <div class="process-content">
+                <h3>Matching Job</h3>
+                <p>
+                    Peserta mengikuti proses interview dan
+                    pencocokan dengan peluang kerja yang tersedia.
+                </p>
+            </div>
+        </div>
+
+        <div class="process-item">
+            <div class="process-number">07</div>
+            <div class="process-content">
+                <h3>COE</h3>
+                <p>
+                    Proses pengurusan Certificate of Eligibility
+                    sesuai jalur program.
+                </p>
+            </div>
+        </div>
+
+        <div class="process-item">
+            <div class="process-number">08</div>
+            <div class="process-content">
+                <h3>Persiapan Keberangkatan</h3>
+                <p>
+                    Peserta menyelesaikan persiapan administrasi
+                    dan kebutuhan sebelum keberangkatan.
+                </p>
+            </div>
+        </div>
+
+        <div class="process-item">
+            <div class="process-number">09</div>
+            <div class="process-content">
+                <h3>Pemberangkatan</h3>
+                <p>
+                    Peserta diberangkatkan sesuai dengan
+                    jadwal dan proses yang telah ditentukan.
+                </p>
+            </div>
+        </div>
+
+        <div class="process-item process-final">
+            <div class="process-number">10</div>
+            <div class="process-content">
+                <h3>Bekerja di Luar Negeri</h3>
+                <p>
+                    Peserta memulai perjalanan kerja sesuai
+                    program dan penempatan yang diperoleh.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     PERSYARATAN
+========================== -->
+
+<section class="requirements" id="persyaratan">
+
+    <div class="section-label">
+        PERSYARATAN
+    </div>
+
+    <h2>
+        Siapkan Dirimu untuk
+        <span>Langkah Berikutnya.</span>
+    </h2>
+
+    <p class="requirements-intro">
+        Pastikan kamu memenuhi persyaratan dan menyiapkan
+        dokumen yang diperlukan sebelum mengikuti program
+        LPK Institut Pekerja Indonesia.
+    </p>
+
+    <div class="requirements-grid">
+
+        <div class="requirement-card">
+
+            <div class="requirement-icon">✓</div>
+
+            <h3>Persyaratan Umum</h3>
+
+            <ul>
+                <li>Memiliki dokumen identitas yang valid</li>
+                <li>Memenuhi ketentuan program yang dipilih</li>
+                <li>Sehat jasmani dan rohani</li>
+                <li>Bersedia mengikuti seluruh tahapan program</li>
+            </ul>
+
+        </div>
+
+
+        <div class="requirement-card">
+
+            <div class="requirement-icon">📄</div>
+
+            <h3>Dokumen</h3>
+
+            <ul>
+                <li>Dokumen identitas</li>
+                <li>Dokumen pendidikan</li>
+                <li>Dokumen keluarga</li>
+                <li>Dokumen pendukung lainnya sesuai program</li>
+            </ul>
+
+        </div>
+
+
+        <div class="requirement-card">
+
+            <div class="requirement-icon">🎯</div>
+
+            <h3>Kesiapan Peserta</h3>
+
+            <ul>
+                <li>Siap mengikuti proses seleksi</li>
+                <li>Siap mengikuti pelatihan</li>
+                <li>Siap mengikuti ujian dan sertifikasi</li>
+                <li>Memiliki komitmen menyelesaikan program</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="requirements-cta">
+
+        <p>
+            Belum yakin apakah kamu memenuhi persyaratan?
+        </p>
+
+        <a href="https://forms.gle/ojp5CSrGKnMDw9UV7"
+           class="btn-primary"
+           target="_blank">
+            Konsultasi & Daftar
+        </a>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     FASILITAS
+========================== -->
+
+<section class="facilities" id="fasilitas">
+
+    <div class="section-label">
+        FASILITAS
+    </div>
+
+    <h2>
+        Mendukung Proses
+        <span>Belajarmu.</span>
+    </h2>
+
+    <p class="facilities-intro">
+        Kami menyediakan pembekalan dan fasilitas yang
+        mendukung peserta selama mengikuti proses pelatihan
+        dan persiapan kerja.
+    </p>
+
+    <div class="facilities-grid">
+
+        <div class="facility-card">
+            <div class="facility-icon">🏫</div>
+            <h3>Ruang Pelatihan</h3>
+            <p>
+                Lingkungan belajar yang mendukung proses
+                pelatihan dan pembelajaran peserta.
+            </p>
+        </div>
+
+        <div class="facility-card">
+            <div class="facility-icon">📚</div>
+            <h3>Pembelajaran Bahasa</h3>
+            <p>
+                Pembelajaran bahasa sesuai dengan kebutuhan
+                program dan tujuan peserta.
+            </p>
+        </div>
+
+        <div class="facility-card">
+            <div class="facility-icon">🌏</div>
+            <h3>Pembekalan Budaya</h3>
+            <p>
+                Pembekalan mengenai budaya dan lingkungan
+                kerja sesuai negara tujuan.
+            </p>
+        </div>
+
+        <div class="facility-card">
+            <div class="facility-icon">📝</div>
+            <h3>Persiapan Ujian</h3>
+            <p>
+                Persiapan menghadapi ujian dan sertifikasi
+                sesuai jalur program.
+            </p>
+        </div>
+
+        <div class="facility-card">
+            <div class="facility-icon">🎯</div>
+            <h3>Persiapan Interview</h3>
+            <p>
+                Pembekalan untuk membantu peserta lebih siap
+                menghadapi proses interview kerja.
+            </p>
+        </div>
+
+        <div class="facility-card">
+            <div class="facility-icon">🤝</div>
+            <h3>Pendampingan</h3>
+            <p>
+                Pendampingan peserta dalam berbagai tahapan
+                proses sesuai program yang diikuti.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     SKEMA PEMBIAYAAN
+========================== -->
+
+<section class="funding" id="pembiayaan">
+
+    <div class="section-label">
+        SKEMA PEMBIAYAAN
+    </div>
+
+    <h2>
+        Dukungan Pembiayaan
+        <span>Program Peserta.</span>
+    </h2>
+
+    <p class="funding-intro">
+        LPK Institut Pekerja Indonesia menyediakan skema
+        pembiayaan yang membantu peserta mengikuti proses
+        pendidikan dan persiapan keberangkatan sesuai
+        ketentuan program.
+    </p>
+
+
+    <div class="funding-grid">
+
+        <!-- Skema 1 -->
+        <div class="funding-card">
+
+            <div class="funding-number">
+                01
+            </div>
+
+            <h3>
+                Dana Talangan Pendidikan
+            </h3>
+
+            <p>
+                Skema dana talangan pendidikan untuk membantu
+                pembiayaan peserta selama mengikuti masa
+                pelatihan.
+            </p>
+
+            <div class="funding-highlight">
+                <strong>Rp3,5 Juta</strong>
+                <span>Diajukan sebagai dana talangan</span>
+            </div>
+
+            <div class="funding-note">
+                Dana pendidikan peserta selama 4 bulan
+                pelatihan sebesar Rp10 juta.
+            </div>
+
+        </div>
+
+
+        <!-- Skema 2 -->
+        <div class="funding-card featured">
+
+            <div class="funding-number">
+                02
+            </div>
+
+            <div class="funding-badge">
+                SKEMA KEBERANGKATAN
+            </div>
+
+            <h3>
+                Dana Talangan Pemberangkatan
+            </h3>
+
+            <p>
+                Pengajuan dana talangan untuk kebutuhan
+                pemberangkatan sekaligus penyelesaian
+                dana pendidikan sebelumnya.
+            </p>
+
+            <div class="funding-highlight">
+                <strong>Rp45 Juta</strong>
+                <span>Total pengajuan ke Bank Himbara BSI</span>
+            </div>
+
+            <div class="funding-note">
+                Terdiri dari dana pemberangkatan Rp35 juta
+                dan Rp10 juta untuk dana pendidikan.
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="funding-flow">
+
+        <h3>
+            Gambaran Alur Pembiayaan
+        </h3>
+
+        <div class="funding-steps">
+
+            <div>
+                <span>01</span>
+                <p>Pendaftaran</p>
+            </div>
+
+            <div>
+                <span>02</span>
+                <p>Pelatihan</p>
+            </div>
+
+            <div>
+                <span>03</span>
+                <p>Pengajuan Dana</p>
+            </div>
+
+            <div>
+                <span>04</span>
+                <p>Pemberangkatan</p>
+            </div>
+
+            <div>
+                <span>05</span>
+                <p>Pengembalian Dana</p>
+            </div>
+
+        </div>
+
+        <p class="funding-disclaimer">
+            Detail persyaratan, mekanisme pengajuan, dan
+            ketentuan pengembalian mengikuti ketentuan
+            program dan lembaga pembiayaan terkait.
+        </p>
+
+    </div>
+
+</section>
+<!-- =========================
+     GALERI
+========================== -->
+
+<section class="gallery" id="galeri">
+
+    <div class="section-label">
+        GALERI
+    </div>
+
+    <h2>
+        Kegiatan
+        <span>LPK IPI.</span>
+    </h2>
+
+    <p class="gallery-intro">
+        Dokumentasi kegiatan pelatihan dan pembinaan
+        peserta LPK Institut Pekerja Indonesia.
+    </p>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="images/pelatihan1.jpg" alt="Kegiatan pelatihan LPK IPI">
+            <div class="gallery-caption">
+                <h3>Kegiatan Pelatihan</h3>
+                <p>Pelatihan peserta LPK IPI</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/pelatihan1.jpg" alt="Kegiatan pelatihan LPK IPI">
+            <div class="gallery-caption">
+                <h3>Pembelajaran Peserta</h3>
+                <p>Kegiatan pembelajaran</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/pelatihan1.jpg" alt="Kegiatan pelatihan LPK IPI">
+            <div class="gallery-caption">
+                <h3>Pembekalan Peserta</h3>
+                <p>Proses pembekalan</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/pelatihan1.jpg" alt="Kegiatan pelatihan LPK IPI">
+            <div class="gallery-caption">
+                <h3>Aktivitas Pelatihan</h3>
+                <p>Dokumentasi kegiatan</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/pelatihan1.jpg" alt="Kegiatan pelatihan LPK IPI">
+            <div class="gallery-caption">
+                <h3>Kegiatan Peserta</h3>
+                <p>Aktivitas peserta LPK IPI</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/pelatihan1.jpg" alt="Kegiatan pelatihan LPK IPI">
+            <div class="gallery-caption">
+                <h3>Pelatihan LPK IPI</h3>
+                <p>Dokumentasi pelatihan</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     FAQ
+========================== -->
+
+<section class="faq" id="faq">
+
+    <div class="section-label">
+        FAQ
+    </div>
+
+    <h2>
+        Pertanyaan yang
+        <span>Sering Ditanyakan.</span>
+    </h2>
+
+    <p class="faq-intro">
+        Temukan jawaban atas beberapa pertanyaan umum
+        mengenai program dan proses di LPK Institut
+        Pekerja Indonesia.
+    </p>
+
+    <div class="faq-list">
+
+        <div class="faq-item">
+
+            <button class="faq-question" type="button"
+                onclick="toggleFaq(this)">
+                <span>Apa saja program yang tersedia di LPK IPI?</span>
+                <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>
+                    LPK Institut Pekerja Indonesia memiliki
+                    program pelatihan untuk calon pekerja
+                    sesuai dengan program yang tersedia,
+                    termasuk jalur Jepang, Korea, dan
+                    pelatihan automotive.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question" type="button"
+                onclick="toggleFaq(this)">
+                <span>Bagaimana cara mendaftar?</span>
+                <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>
+                    Pendaftaran dapat dilakukan melalui
+                    formulir pendaftaran online LPK IPI.
+                    Setelah mendaftar, peserta akan mengikuti
+                    tahapan seleksi sesuai program yang dipilih.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question" type="button"
+                onclick="toggleFaq(this)">
+                <span>Berapa lama proses pelatihannya?</span>
+                <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>
+                    Masa pelatihan yang tercantum dalam
+                    program LPK IPI adalah selama 4 bulan.
+                    Detail jadwal dan tahapan pelatihan
+                    mengikuti program yang dipilih peserta.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question" type="button"
+                onclick="toggleFaq(this)">
+                <span>Apa itu program SSW?</span>
+                <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>
+                    SSW (Specified Skilled Worker) merupakan
+                    salah satu jalur program kerja yang
+                    tersedia dalam proses penempatan sesuai
+                    dengan ketentuan program.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question" type="button"
+                onclick="toggleFaq(this)">
+                <span>Apakah tersedia skema dana talangan?</span>
+                <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>
+                    Tersedia skema pembiayaan sesuai dengan
+                    program yang ditawarkan. Detail nominal,
+                    persyaratan, dan mekanisme pengajuan dapat
+                    dilihat pada bagian Skema Pembiayaan atau
+                    dikonsultasikan dengan Customer Service.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question" type="button"
+                onclick="toggleFaq(this)">
+                <span>Bagaimana proses menuju pemberangkatan?</span>
+                <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>
+                    Peserta mengikuti tahapan program mulai
+                    dari pendaftaran, seleksi, pelatihan,
+                    ujian dan sertifikasi, matching job,
+                    proses COE, persiapan keberangkatan,
+                    hingga pemberangkatan sesuai program.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- =========================
+         PROGRAM
+    ========================== -->
+
+    <section class="program" id="program">
+
+        <div class="program-heading">
+            <div class="section-label">PROGRAM KAMI</div>
+
+            <h2>
+                Pilihan Program untuk
+                <span>Masa Depan.</span>
+            </h2>
+
+            <p>
+                Program pelatihan LPK Institut Pekerja Indonesia
+                dirancang untuk mempersiapkan peserta menuju dunia kerja
+                di dalam maupun luar negeri.
+            </p>
+        </div>
+
+
+        <div class="program-cards">
+
+            <!-- PROGRAM JEPANG -->
+            <div class="program-card">
+
+                <div class="program-top">
+                    <span class="program-country">🇯🇵</span>
+
+                    <span class="program-tag">
+                        PROGRAM INTERNASIONAL
+                    </span>
+                </div>
+
+                <h3>Program Jepang</h3>
+
+                <p>
+                    Program persiapan kerja ke Jepang melalui pelatihan
+                    bahasa, budaya, keterampilan, sertifikasi, dan
+                    pendampingan menuju penempatan kerja.
+                </p>
+
+                <ul>
+                    <li>Pelatihan Bahasa Jepang</li>
+                    <li>Budaya & Kehidupan Jepang</li>
+                    <li>Persiapan JFT A2 / JLPT N4</li>
+                    <li>Persiapan SSW</li>
+                    <li>Matching Job & Interview</li>
+                    <li>Pendampingan Keberangkatan</li>
+                </ul>
+
+                <a href="#pendaftaran" class="program-button">
+                    Pelajari Program →
+                </a>
+
+            </div>
+
+
+            <!-- PROGRAM KOREA -->
+            <div class="program-card">
+
+                <div class="program-top">
+                    <span class="program-country">🇰🇷</span>
+
+                    <span class="program-tag">
+                        PROGRAM INTERNASIONAL
+                    </span>
+                </div>
+
+                <h3>Program Korea</h3>
+
+                <p>
+                    Program persiapan kerja ke Korea melalui pelatihan
+                    bahasa, budaya, keterampilan, dan persiapan menuju
+                    peluang kerja.
+                </p>
+
+                <ul>
+                    <li>Pelatihan Bahasa Korea</li>
+                    <li>Budaya & Kehidupan Korea</li>
+                    <li>Persiapan Kerja</li>
+                    <li>Sertifikasi sesuai Program</li>
+                    <li>Persiapan Interview</li>
+                    <li>Pendampingan Penempatan</li>
+                </ul>
+
+                <a href="#pendaftaran" class="program-button">
+                    Pelajari Program →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SECTION PENDAFTARAN -->
+<section id="pendaftaran" class="registration-section">
+
+    <div class="section-label">
+        PENDAFTARAN
+    </div>
+
+    <h2>
+        Mulai Langkahmu Bersama
+        <span>LPK IPI.</span>
+    </h2>
+
+    <p class="registration-intro">
+        Siapkan diri untuk mendapatkan pelatihan, sertifikasi,
+        dan kesempatan kerja sesuai dengan program pilihanmu.
+    </p>
+
+    <div class="registration-cards">
+
+        <!-- Program Jepang -->
+        <div class="registration-card">
+            <div class="registration-icon">🇯🇵</div>
+
+            <h3>Program Jepang</h3>
+
+            <p>
+                Persiapkan diri untuk bekerja di Jepang melalui
+                pelatihan bahasa, budaya, keterampilan,
+                sertifikasi, dan pendampingan menuju penempatan kerja.
+            </p>
+
+            <a href="https://forms.gle/ojp5CSrGKnMDw9UV7"
+                class="registration-button"
+                target="_blank">
+                Daftar Program Jepang
+            </a>
+        </div>
+
+        <!-- Program Korea -->
+        <div class="registration-card">
+            <div class="registration-icon">🇰🇷</div>
+
+            <h3>Program Korea</h3>
+
+            <p>
+                Persiapkan diri untuk bekerja di Korea melalui
+                pelatihan bahasa, budaya, keterampilan,
+                dan persiapan menuju peluang kerja.
+            </p>
+
+            <a href="#daftar" class="registration-button">
+                Daftar Program Korea
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SECTION KONTAK -->
+<section id="kontak" class="contact-section">
+
+    <div class="section-label">
+        KONTAK
+    </div>
+
+    <h2>
+        Mari <span>Terhubung</span> dengan Kami.
+    </h2>
+
+    <p class="contact-intro">
+        Punya pertanyaan tentang program, pendaftaran, atau proses
+        pelatihan? Tim LPK Institut Pekerja Indonesia siap membantu.
+    </p>
+
+    <div class="contact-container">
+
+        <!-- Informasi Kontak -->
+        <div class="contact-info">
+
+            <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div>
+                    <h3>Lokasi</h3>
+                    <p>
+                        Tangerang Selatan, Banten
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">💬</div>
+                <div>
+                    <h3>WhatsApp</h3>
+                    <p>
+                        Customer Service LPK IPI
+                    </p>
+                    <a href="https://wa.me/6287811557023"
+                        class="contact-link"
+                        target="_blank">
+                        Hubungi via WhatsApp →
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">📱</div>
+                <div>
+                    <h3>Media Sosial</h3>
+                    <p>
+                        Ikuti informasi dan kegiatan LPK IPI
+                    </p>
+                    <a href="#" class="contact-link">
+                        Lihat Media Sosial →
+                    </a>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/lpk_institutpekerjaindonesia/"
+                            target="_blank"
+                            aria-label="Instagram"
+                            class="social-icon instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://www.tiktok.com/@admin.lpkipi"
+                            target="_blank"
+                            aria-label="TikTok"
+                            class="social-icon tiktok">
+                                <i class="fa-brands fa-tiktok"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/admin.lpkipi"
+                            target="_blank"
+                            aria-label="Facebook"
+                            class="social-icon facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Kotak CTA -->
+        <div class="contact-card">
+
+            <h3>Siap Memulai Langkahmu?</h3>
+
+            <p>
+                Jangan ragu untuk menghubungi kami dan
+                dapatkan informasi lengkap mengenai program
+                yang tersedia.
+            </p>
+
+            <a href="https://wa.me/6287811557023"
+                class="contact-button"
+                target="_blank">
+                Hubungi Customer Service
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+    <!-- BRAND -->
+
+    <div class="footer-brand">
+
+        <img src="images/Logo_LPK_IPI-nobackground.png"
+             alt="Logo LPK Institut Pekerja Indonesia">
+
+        <p>
+            Membangun kompetensi, membuka masa depan.
+        </p>
+
+    </div>
+
+
+    <!-- MENU -->
+
+    <div class="footer-links">
+
+        <h3>Menu</h3>
+
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#program">Program</a>
+        <a href="#persyaratan">Persyaratan</a>
+        <a href="#fasilitas">Fasilitas</a>
+        <a href="#pembiayaan">Pembiayaan</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontak">Kontak</a>
+
+        <a href="https://forms.gle/ojp5CSrGKnMDw9UV7"
+           target="_blank"
+           class="footer-register">
+            Pendaftaran
+        </a>
+
+    </div>
+
+
+    <!-- KONTAK -->
+
+    <div class="footer-contact">
+
+        <h3>Hubungi Kami</h3>
+
+        <p>
+            Tangerang Selatan, Banten
+        </p>
+
+        <p>
+            LPK Institut Pekerja Indonesia
+        </p>
+
+
+        <!-- WHATSAPP -->
+
+        <a href="https://wa.me/6287811557023"
+           target="_blank"
+           class="footer-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
+        </a>
+
+
+        <!-- SOCIAL MEDIA -->
+
+        <div class="footer-social">
+
+            <a
+                href="https://www.instagram.com/lpk_institutpekerjaindonesia/"
+                target="_blank"
+                aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+                href="https://www.tiktok.com/@admin.lpkipi"
+                target="_blank"
+                aria-label="TikTok">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a
+                href="https://www.facebook.com/admin.lpkipi"
+                target="_blank"
+                aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+    <p>
+        © 2026 LPK Institut Pekerja Indonesia.
+        All Rights Reserved.
+    </p>
+
+</div>
+
+</footer>
+<script>
+function toggleMenu() {
+    document.querySelector('.nav-menu').classList.toggle('active');
+}
+
+document.querySelectorAll('.nav-menu a').forEach(link => {
+    link.addEventListener('click', function() {
+        document.querySelector('.nav-menu').classList.remove('active');
+    });
+});
+</script>
+
+<script>
+function toggleFaq(button) {
+
+    const item = button.parentElement;
+
+    item.classList.toggle("active");
+
+}
+</script>
+
+</body>
+</html>
